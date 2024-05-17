@@ -12,6 +12,9 @@
 *.cb2
 *.pdf
 .*.lb
+./pdf/*
+./docs/*
+./raw/*
 
 
 ## Intermediate documents:
