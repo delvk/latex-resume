@@ -1,0 +1,157 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+%%
+\usepackage{vntex}
+\usepackage{mdframed,xcolor}
+%constant value%
+\mdfdefinestyle{ProjectFrame}{%
+	% linecolor=black,
+%	outerlinewidth=2pt,
+	%roundcorner=20pt,
+	innertopmargin=0.2cm,
+	innerbottommargin=0.2cm,
+	innerrightmargin=0.2cm,
+	innerleftmargin=0.2cm,
+	leftmargin = 0.6cm,
+	rightmargin = 0.2cm,
+	linecolor=white,
+	backgroundcolor=gray!15!white
+	}
+
+%%
+\name{John}{Doe}
+\newcommand*{\customcventry}[7][.13em]{
+\begin{tabular}{@{}l}
+{\bfseries #4} \
+{\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+{\bfseries #5} \
+{\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\
+\begin{minipage}{\maincolumnwidth}%
+\small#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}}
+\begin{document}
+\makecvtitle
+\vspace*{-16mm}
+\begin{center}\textbf{ Tiếng Việt }\end{center}
+\begin{center}
+\begin{tabular}{ c c c }
+\quad\faMobile\enskip +84 919922081 & \quad\faEnvelope\enskip nbkhuong97@gmail.com & \quad\faHome\enskip Ho Chi Minh City, Vietnam \\
+\faLinkedin\enskip \color{blue} \href{https://www.linkedin.com/in/khuong-nguyen76/}{in/khuong-nguyen76} &
+\faGithub\enspace \color{blue} \href{https://github.com/delvk}{github.com/delvk} & \faGitlab\enspace \color{blue} \href{https://gitlab.com/delvk}{gitlab.com/delvk}
+\end{tabular}
+\end{center}
+
+\section{Giới thiêu bản thân}
+
+{Chuyên viên lập trình phát triển ứng dụng Corebanking hơn 4.5 năm kinh nghiệm, Chuyền về các module Account, Depo, GL. Đã tham gia và hoàn thành nhiều dự án yêu cầu phát triển \& tích hợp phía corebank. Từng làm việc với các hệ thống Corebank Infosys, Symbol và sắp tới là Transact. Thành thạo Oracle, PLSQL.}
+
+\section{Kỹ năng chuyên môn}
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+	\item \textbf{System/Network/Devops}: Windows, Linux, Git, ELK, Docker
+	\item \textbf{Language}: PLSQL, Golang, JavaScript, C/C++, Batch, Shell, Python, Java  
+	\item \textbf{Database}: Oracle, PostgreSQL, MongoDB
+\end{itemize}}
+
+\section{Kinh nghiệm làm việc}
+\customcventry{11/2021 ‐ hiện tại}{{\color{blue}\href{https://www.vib.com.vn}{(Vietnam Int. Bank)}}}{Deposit, Payroll Solution DevOps Specialist,}{Quận 1, Tp. HCM}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Thiết kế/phát triển các luồng tích hợp, api tích hợp giữa Corebank \& các hệ thống vệ tinh (Mobile app, Counter App, ...)
+\item Phát triển các job tự động, thủ tục PLSQL của DB Corebank các chức năng cho Corebank
+\item Tìm hiểu và sửa/báo cáo các lỗi phát sinh trong hệ thống Corebank
+\end{itemize}}}
+
+\begin{mdframed}[style=ProjectFrame]
+	\textbf{Tên dự án:} Cash Management \\
+	\textbf{Thông tin về thời gian dự án:} 11/2021 -> 03/2023 \\
+	\textbf{Giới thiệu dự án:}	Mang các chức năng của Teller từ màn hình Core lên hệ thống mà Bank tự phát triển\\
+	\textbf{Vai trò trong dự án:}
+	\begin{itemize}[leftmargin=0.6cm,noitemsep,topsep=0pt,label=-]
+	\item Design, dev luồng đóng/mở ngày cho hệ thống
+	\item Design, dev các api tích hợp phía core (transfer, thu phí, lấy thông tin GL, thông tin giao dịch,..)
+	\end{itemize}
+\end{mdframed}
+
+\begin{mdframed}[style=ProjectFrame]
+	\textbf{Tên dự án:} TD Investment \\
+	\textbf{Thông tin về thời gian dự án:} 12/2021 -> 10/2023 \\
+	\textbf{Giới thiệu dự án:} 
+	\begin{itemize}[leftmargin=0.6cm,noitemsep,topsep=0pt,label=-]
+		\item Tạo thị trường cho KHCN có thể chủ động chuyển nhượng sổ tiết kiệm, VIB đứng giữa ăn hoa hồng + huy động được nguồn tiền.
+		\item Huy động nguồn vốn từ tiền gửi dài hạn của KHDN, thông qua các tổ chức này để bán kỳ hạn sổ nhỏ hơn cho KHCN, như vậy KHCN vừa có được mức lợi nhuận tốt, KHDN cũng được hưởng phần chênh lệch, còn VIB cũng huy động được nguồn vốn dài hạn
+	\end{itemize}
+	\textbf{Vai trò trong dự án:}
+	\begin{itemize}[leftmargin=0.6cm,noitemsep,topsep=0pt,label=-]
+		\item Design + Dev các api tích hợp phía core (mở sổ, hold account, hold tiền, chuyển nhượng, thu phí, lấy các thông tin liên quan,..)
+		\item Design + phát triển flow + job thực hiện chuyển nhượng sổ vào ngày chi lãi
+		\item Vận hành sản phẩm phía Corebank, app TD Investment
+	\end{itemize}
+\end{mdframed}
+
+\begin{mdframed}[style=ProjectFrame]
+	\textbf{Tên dự án:} Corebanking transfomation \\
+	\textbf{Thông tin về thời gian dự án:} 11/2023 -> hiện tại \\
+	\textbf{Giới thiệu dự án:} Nâng cấp corebanking để đáp ứng các yêu cầu hiện đại như hiệu năng, tích hợp cloud, có module tích hợp riêng.\\
+	\textbf{Vai trò trong dự án:} Phụ trách các vấn đề liên quan đến tích hợp/migration các api của deposit \& account, bao gồm: tổng hợp chi tiết hệ thống cũ, mapping data với BA, walkthrough IRD.
+\end{mdframed}
+
+
+\customcventry{10/2021}{{\color{blue}\href{https://lpbank.com.vn}{(LienVIet Post Bank)}}}{Reporting Dev., Data Analyst,}{Quận 1, Tp. HCM}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Phát triển các báo cáo dùng oracle bi publisher trong Datawarehouse (PLSQL).
+\end{itemize}}}
+
+\customcventry{03/2020 - 09/2021}{{\color{blue}\href{https://eximbank.com.vn}{(Eximbank)}}}{Corebanking Developer,}{Quận 3, Tp. HCM}{}
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+	\item Phát triển các báo cáo dùng oracle bi publisher trong Datawarehouse (PLSQL).
+\end{itemize}}
+
+\section{Online Courses \& Certifications}
+{\begin{itemize}[label=\textbullet]
+      \item Introduction to Digital Marketing (Jan. 2023) - \underline{\color{blue}\href{https://google.com/}{SEMRUSH}}
+      \item Career Essentials in Digital Marketing by LinkedIn (Aug. 2022) - \underline{\color{blue}\href{https://google.com/}{LinkedIn}}
+      \item Visualization with Tableau (Feb. 2022) - \underline{\color{blue}\href{https://google.com/}{Coursera}}
+      \item Foundations of Google Analytics  (Jun. 2021) - \underline{\color{blue}\href{https://google.com/}{Google, Coursera}}
+     \item Google Analytics for Power Users (Jun. 2021) - \underline{\color{blue}\href{https://google.com/}{Google}}
+       \item The Fundamentals of Digital Marketing, (Jul. 2019) - \underline{\color{blue}\href{https://google.com/}{Google}} 
+  \end{itemize}} 
+
+\section{Education}
+\customcventry{2020-2024}{\color{blue}\href{https://www.google.com/}{University of Las Vegas}}{BSc Computer Science}{Las Vegas, USA}{}{}{Relevant Courses: Software and Hardware, Data Visualization, Business Intelligence, Digital Marketing, Time Series Analysis \& Forecasting.}
+
+\section{Skills}
+{\begin{itemize}[label=\textbullet]
+\item {\textbf{Data Visualization:} Microsoft Power BI, Excel}
+\item {\textbf{Digital Marketing:} Project Management, Social Media Optimization, Content Writing, Campaign Analysis \& Reporting, PPC \& SEM Strategies, Conversion rate optimization (CRO), PPC advertising}
+\item {\textbf{Software:} Project (MSP), Adobe PhotoShop, Audition, Canva}
+\item {\textbf{SEO:} Google Search Console, Analytics, Looker Studio, Trends, Screaming Frog, SEMrush, Ahrefs, WordPress}
+\item {\textbf{Soft Skills:} Presentation, Planning, Organized, Creative Problem-Solving, Teamwork, Active Listening, Adaptability, Analytical Thinking}
+\end{itemize}}
+
+\section{Languages}
+\begin{multicols}{2}
+    \begin{itemize}[label=\textbullet]
+    \item \textbf{English} [Native]
+    \item {\textbf{French} [Basic] - Learning}
+    \item {\textbf{Spanish} [Native]}
+    \item {\textbf{German} [Basic] - A1}
+    \end{itemize}
+\end{multicols}
+\end{document}
